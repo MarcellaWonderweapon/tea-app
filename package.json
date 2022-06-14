@@ -1,0 +1,26 @@
+{
+  "name": "tea-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "nodemon server.js --prefix server",
+    "start": "concurrently \"npm run server \" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcellaWonderweapon/tea-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcellaWonderweapon/tea-app/issues"
+  },
+  "homepage": "https://github.com/MarcellaWonderweapon/tea-app#readme",
+  "dependencies": {
+    "concurrently": "^7.2.1"
+  }
+}
